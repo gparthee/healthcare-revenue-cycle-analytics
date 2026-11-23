@@ -1,0 +1,189 @@
+ClaimID,Reason,DenialDate,RecoveredCents
+9,Authorization,2026-06-30,0
+17,Authorization,2026-06-30,0
+18,Coding,2026-06-30,100765
+21,Authorization,2026-06-30,0
+24,Coding,2026-06-30,0
+26,Eligibility,2026-06-30,0
+27,Eligibility,2026-06-30,43578
+35,Timely filing,2026-06-30,73968
+36,Timely filing,2026-06-30,0
+37,Coding,2026-06-30,72791
+45,Authorization,2026-06-30,0
+46,Eligibility,2026-06-30,0
+48,Coding,2026-06-30,0
+57,Eligibility,2026-06-30,0
+66,Coding,2026-06-30,0
+69,Authorization,2026-06-30,69240
+70,Coding,2026-06-30,0
+72,Eligibility,2026-06-30,0
+75,Timely filing,2026-06-30,6090
+76,Timely filing,2026-06-30,0
+92,Eligibility,2026-06-30,0
+99,Eligibility,2026-06-30,7550
+104,Authorization,2026-06-30,19969
+107,Coding,2026-06-30,0
+110,Eligibility,2026-06-30,0
+114,Timely filing,2026-06-30,0
+121,Coding,2026-06-30,0
+125,Timely filing,2026-06-30,0
+130,Timely filing,2026-06-30,0
+134,Eligibility,2026-06-30,45836
+137,Coding,2026-06-30,0
+142,Eligibility,2026-06-30,0
+145,Timely filing,2026-06-30,17251
+155,Authorization,2026-06-30,0
+164,Coding,2026-06-30,27807
+168,Eligibility,2026-06-30,0
+169,Coding,2026-06-30,0
+174,Timely filing,2026-06-30,26245
+178,Timely filing,2026-06-30,66421
+195,Coding,2026-06-30,0
+207,Authorization,2026-06-30,9130
+208,Authorization,2026-06-30,18723
+212,Timely filing,2026-06-30,0
+215,Coding,2026-06-30,0
+232,Timely filing,2026-06-30,42829
+233,Eligibility,2026-06-30,0
+236,Coding,2026-06-30,0
+237,Authorization,2026-06-30,29097
+253,Coding,2026-06-30,73368
+254,Timely filing,2026-06-30,0
+260,Coding,2026-06-30,0
+261,Timely filing,2026-06-30,0
+269,Coding,2026-06-30,0
+279,Authorization,2026-06-30,0
+283,Eligibility,2026-06-30,0
+292,Coding,2026-06-30,0
+295,Timely filing,2026-06-30,0
+297,Timely filing,2026-06-30,0
+304,Authorization,2026-06-30,0
+305,Authorization,2026-06-30,0
+308,Eligibility,2026-06-30,0
+312,Timely filing,2026-06-30,0
+313,Timely filing,2026-06-30,2813
+314,Timely filing,2026-06-30,0
+318,Timely filing,2026-06-30,0
+325,Coding,2026-06-30,21990
+326,Timely filing,2026-06-30,0
+332,Eligibility,2026-06-30,0
+346,Eligibility,2026-06-30,0
+351,Eligibility,2026-06-30,0
+359,Eligibility,2026-06-30,0
+366,Coding,2026-06-30,0
+367,Eligibility,2026-06-30,0
+374,Eligibility,2026-06-30,0
+384,Coding,2026-06-30,0
+388,Authorization,2026-06-30,58921
+390,Authorization,2026-06-30,23227
+396,Authorization,2026-06-30,32448
+399,Authorization,2026-06-30,0
+402,Eligibility,2026-06-30,32591
+413,Authorization,2026-06-30,0
+428,Coding,2026-06-30,0
+432,Coding,2026-06-30,96618
+439,Timely filing,2026-06-30,0
+441,Timely filing,2026-06-30,0
+446,Coding,2026-06-30,34087
+450,Timely filing,2026-06-30,0
+453,Eligibility,2026-06-30,37689
+456,Coding,2026-06-30,0
+461,Coding,2026-06-30,30367
+462,Coding,2026-06-30,29066
+463,Timely filing,2026-06-30,0
+466,Coding,2026-06-30,0
+469,Authorization,2026-06-30,38595
+479,Timely filing,2026-06-30,0
+480,Coding,2026-06-30,0
+482,Eligibility,2026-06-30,0
+490,Coding,2026-06-30,16357
+499,Coding,2026-06-30,0
+508,Eligibility,2026-06-30,0
+514,Eligibility,2026-06-30,0
+515,Timely filing,2026-06-30,65442
+521,Eligibility,2026-06-30,0
+525,Authorization,2026-06-30,0
+528,Authorization,2026-06-30,0
+532,Authorization,2026-06-30,50948
+534,Eligibility,2026-06-30,0
+536,Coding,2026-06-30,0
+551,Eligibility,2026-06-30,0
+555,Coding,2026-06-30,21000
+568,Authorization,2026-06-30,0
+569,Authorization,2026-06-30,71099
+576,Coding,2026-06-30,0
+579,Eligibility,2026-06-30,60389
+592,Authorization,2026-06-30,22858
+597,Authorization,2026-06-30,48745
+599,Eligibility,2026-06-30,0
+601,Eligibility,2026-06-30,0
+607,Eligibility,2026-06-30,5854
+615,Eligibility,2026-06-30,0
+620,Authorization,2026-06-30,0
+621,Eligibility,2026-06-30,0
+635,Authorization,2026-06-30,0
+636,Coding,2026-06-30,0
+638,Eligibility,2026-06-30,80455
+639,Eligibility,2026-06-30,0
+641,Coding,2026-06-30,40466
+656,Eligibility,2026-06-30,17373
+663,Eligibility,2026-06-30,76517
+670,Timely filing,2026-06-30,0
+674,Eligibility,2026-06-30,0
+676,Timely filing,2026-06-30,70374
+679,Coding,2026-06-30,0
+680,Timely filing,2026-06-30,0
+695,Coding,2026-06-30,0
+706,Eligibility,2026-06-30,0
+709,Eligibility,2026-06-30,2510
+713,Authorization,2026-06-30,43839
+723,Eligibility,2026-06-30,0
+727,Coding,2026-06-30,0
+732,Eligibility,2026-06-30,95134
+742,Eligibility,2026-06-30,0
+745,Eligibility,2026-06-30,17203
+749,Authorization,2026-06-30,35977
+753,Timely filing,2026-06-30,0
+763,Eligibility,2026-06-30,25871
+766,Timely filing,2026-06-30,0
+771,Eligibility,2026-06-30,0
+774,Authorization,2026-06-30,0
+777,Timely filing,2026-06-30,0
+779,Eligibility,2026-06-30,0
+783,Coding,2026-06-30,0
+784,Eligibility,2026-06-30,15080
+787,Timely filing,2026-06-30,12441
+790,Coding,2026-06-30,0
+791,Authorization,2026-06-30,0
+806,Authorization,2026-06-30,0
+813,Coding,2026-06-30,0
+826,Timely filing,2026-06-30,0
+827,Eligibility,2026-06-30,13640
+834,Authorization,2026-06-30,80749
+835,Authorization,2026-06-30,0
+843,Authorization,2026-06-30,0
+846,Coding,2026-06-30,60712
+847,Authorization,2026-06-30,44759
+853,Eligibility,2026-06-30,0
+856,Eligibility,2026-06-30,2255
+863,Authorization,2026-06-30,0
+865,Authorization,2026-06-30,0
+871,Coding,2026-06-30,0
+876,Coding,2026-06-30,0
+878,Eligibility,2026-06-30,0
+879,Coding,2026-06-30,46684
+886,Timely filing,2026-06-30,59675
+893,Eligibility,2026-06-30,21057
+904,Authorization,2026-06-30,26479
+906,Coding,2026-06-30,0
+910,Eligibility,2026-06-30,0
+929,Eligibility,2026-06-30,0
+936,Eligibility,2026-06-30,0
+952,Authorization,2026-06-30,0
+958,Eligibility,2026-06-30,48774
+961,Coding,2026-06-30,43925
+970,Authorization,2026-06-30,0
+971,Coding,2026-06-30,0
+974,Authorization,2026-06-30,7992
+984,Coding,2026-06-30,0
+1000,Timely filing,2026-06-30,0
