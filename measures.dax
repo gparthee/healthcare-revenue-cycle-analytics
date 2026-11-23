@@ -1,0 +1,18 @@
+// Create each measure separately in Power BI Desktop.
+Total Claims = DISTINCTCOUNT(Claims[ClaimID])
+Gross Charges = DIVIDE(SUM(Claims[ChargeCents]),100)
+Allowed Amount = DIVIDE(SUM(Claims[AllowedCents]),100)
+Paid Amount = DIVIDE(SUM(Payments[PaidCents]),100)
+Open AR = DIVIDE(SUM(Claims[OpenARCents]),100)
+Initial Denied Claims = SUM(Claims[DeniedFlag])
+Initial Denial Rate = DIVIDE([Initial Denied Claims],[Total Claims])
+Collection Rate = DIVIDE([Paid Amount],[Allowed Amount])
+Recovered Dollars = DIVIDE(SUM(Denials[RecoveredCents]),100)
+Denial Recovery Rate = DIVIDE([Recovered Dollars],CALCULATE([Allowed Amount],Claims[DeniedFlag]=1))
+Average Daily Allowed = DIVIDE([Allowed Amount],COUNTROWS(VALUES('Dates'[Date])))
+Days in AR Proxy = DIVIDE([Open AR],[Average Daily Allowed])
+Prior Month Allowed = CALCULATE([Allowed Amount],DATEADD('Dates'[Date],-1,MONTH))
+Allowed MoM Change = DIVIDE([Allowed Amount]-[Prior Month Allowed],[Prior Month Allowed])
+// Calculated columns in Claims:
+Age Days = DATEDIFF(Claims[ServiceDate],DATE(2026,6,30),DAY)
+Age Bucket = SWITCH(TRUE(),Claims[Age Days]<=30,"0–30",Claims[Age Days]<=60,"31–60",Claims[Age Days]<=90,"61–90","91+")
