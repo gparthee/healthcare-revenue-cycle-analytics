@@ -1,33 +1,49 @@
-# Healthcare revenue-cycle analytics | Power BI report kit
+# Healthcare Revenue Cycle Analytics
+**Power BI · DAX · Data Modeling · Claims Analysis** | Independent portfolio project
 
-Healthcare revenue-cycle analysis on **synthetic** claims data, with example measures for collections, initial denials and aging. No real patient information, PHI or employer data is used.
+A reproducible revenue-cycle report-building kit using *fully synthetic* claim, payment, denial, patient, payer, facility, and date tables. It explores initial denials, collections, and aging by payer and facility.
 
-![Illustrative analytics preview](docs/preview.svg)
+![Illustrative overview — synthetic data](docs/preview.svg)
 
-## Semantic model
+## Business question
+How can healthcare operations teams monitor payments, identify initial denials, and prioritize outstanding accounts receivable (A/R) with consistent measures?
 
+## Data model
 ```mermaid
 flowchart LR
-  Patients --> Claims
-  Payers --> Claims
-  Facilities --> Claims
-  Dates --> Claims
+  Patient[Patients] --> Claims[Claims]
+  Payer[Payers] --> Claims
+  Facility[Facilities] --> Claims
+  Date[Dates] --> Claims
   Claims --> Payments
   Claims --> Denials
 ```
 
-## Build the Power BI report
+## Verified synthetic dataset
+Run `python validate.py` with Python 3.10+.
 
-1. Import the seven CSV files from `data/` into Power BI Desktop. Rename the tables Claims, Payments, Denials, Patients, Payers, Facilities and Dates. Set numerical IDs and monetary cents as whole numbers; cast date fields to Date.
-2. Create single-direction, one-to-many relationships from Patients, Payers, Facilities and Dates to Claims. Create Claims-to-Payments and Claims-to-Denials by ClaimID.
-3. Add the DAX measures and calculated columns from `measures.dax` individually.
-4. Build three pages: **Executive summary** (collection and denial KPIs), **Denials** (root causes and recovery) and **A/R aging** (payer/facility filters and aging buckets).
-5. Run `python validate.py` to check dataset arithmetic and key integrity.
+| Metric | Computed result |
+|---|---:|
+| Claims | **1,000** |
+| Initial denials | **188** |
+| Initial denial rate | **18.8%** |
+| Allowed amount | **$867,887.99** |
+| Payments | **$580,926.62** |
+| Outstanding A/R | **$286,961.37** |
+| Collection rate (paid ÷ allowed) | **66.94%** |
 
-## Metrics
+The synthetic inputs reconcile: **allowed amount = payments + open A/R**. These figures are demonstration data, not real provider performance.
 
-The synthetic sample contains 1,000 claims. The validation script calculates claims, denials, allowed amounts, paid amounts, outstanding A/R and the collection rate directly from the CSVs.
+## Building the Power BI report
+1. Import the seven CSVs from `data/` and rename them `Claims`, `Payments`, `Denials`, `Patients`, `Payers`, `Facilities`, `Dates`.
+2. Set ID and monetary-cent columns to Whole Number; date columns to Date. Create one-to-many, single-direction dimension → claims relationships, plus Claims → Payments and Claims → Denials by `ClaimID`.
+3. Add each measure and calculated column from `measures.dax` **individually**.
+4. Build pages for **Executive KPIs**, **Denial analysis** and **A/R aging**. Filter by payer and facility, and validate results against `python validate.py`.
 
-## Limitations
+## Included
+- `data/` — seven related synthetic CSV tables
+- `measures.dax` — 14 draft measures and two calculated columns
+- `validate.py` — arithmetic and referential checks
+- `docs/preview.svg` — illustrative report overview
 
-This is a **Power BI report-building kit**, not a published `.pbix`. The SVG preview is an illustrative local visualization, **not** an actual Power BI Desktop screenshot. DAX has not been executed in Power BI Desktop.
+**Scope:** this is a **Power BI development kit**, not a completed `.pbix` or a published Power BI dashboard. DAX has not been validated in Power BI Desktop; the image is an illustrative diagram, not an exported Power BI screenshot. No PHI or employer data.
